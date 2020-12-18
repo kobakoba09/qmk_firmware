@@ -1,7 +1,7 @@
 # qmk_firmware
 
 ## 概要
-JISplit89用のqmk_firmwareキーマップです。
+JISplit89用のqmk_firmwareキーマップです。  
 JIS配列に準拠したレイヤー、テンキーレイヤー、マウス・アローキーレイヤー、ファンクションキーレイヤーと  
 マウスのみレイヤー、LED設定レイヤーを備えています。  
 
@@ -19,6 +19,9 @@ JIS配列に準拠したレイヤー、テンキーレイヤー、マウス・�
 https://github.com/qmk/qmk_firmware
 * ビルドのための設定  
 https://docs.qmk.fm/#/ja/newbs_getting_started
-* clone先のkeyboardsディレクトリにこのリポジトリをclone
+* このリポジトリをclone
+* cloneしたqmk_firmwareのkeyboards/jisplit89/keymaps配下にこのリポジトリのディレクトリのシンボリックリンクを張る  
+cd /path/to/orginal/qmk_firmware/keyboards/jisplit89/keymaps  
+ln -s ~/path/to/kobakoba09/qmk_firmware/keyboards/jisplit89/keymaps/kobakoba09 kobakoba09  
 * ビルド  
 qmk compile -kb jisplit89 -km kobakoba09
